@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+* {
+
+}
+
+
+body {
+  background-color: rgba(0,0,0,1);
+  color: #fff;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", Arial, 'LiHei Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /*
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  */
+}
+
+a,a:link { color: #5E8C88; text-decoration: underline; }
+a:visited { color: #5E8C88; text-decoration: underline; }
+a:hover { color: #97D74A; text-decoration: underline; }
+a:active { color: #FF3333; }
+
+#body-wrapper {
+  padding: 10px 10px;
+}
+
+#output {
+  font-size: 1.4rem;
+  /*text-shadow: 0 0 1px #000, 1px 0 1px #000, 0 1px 1px #000, 1px 1px 1px #000;*/
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 1px 1px 3px;
+  font-weight: bold;
+}
+
+#scroll_to_bottom_btn {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgba(200,0,0,0.7);
+  color: #ffffff;
+  display: none;
+}
+
+.chat_title {
+  font-size: 1.4rem;
+  /*text-shadow: 0 0 1px #000, 1px 0 1px #000, 0 1px 1px #000, 1px 1px 1px #000;*/
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 1px 1px 3px;
+  font-weight: bold;
+  text-align: center;
+  color: #edf798;
+  padding: 0.5rem 0;
+}
+
+#announcements {
+  text-align: center;
+  /*text-shadow: 0 0 1px #000, 1px 0 1px #000, 0 1px 1px #000, 1px 1px 1px #000;*/
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 1px 1px 3px;
+}
+
+.output_lines {
+  margin: 2px 0;
+  word-wrap: break-word;
+  color: #eee;
+  font-size: 1.4rem;
+}
+.kk_border {
+  border-left: 3px solid #ff4c4c;
+  margin: 0 5px;
+}
+.kk_chat .kk_border {
+  border-left-color: #ff4c4c;
+}
+.kk_gift .kk_border {
+  border-left-color: #4cff4c;
+}
+.kk_come .kk_border {
+  border-left-color: #4c4cff;
+}
+/*
+.kk_conn {
+  display: none;
+}
+*/
+.kk_reconn {
+  display: none;
+}
+
+.kk_time {
+  font-size: 10px;
+  padding: 0;
+  color: #ddd;
+}
+
+.isadmin {
+  color: #ff4c4c;
+}
+
+.grade_lvl {
+  color: #fff;
+}
+
+.name {
+  color: red;
+  font-weight: bolder;
+}
+
+/*
+.name_title::after{
+  content: "(" attr(title) ")";
+}
+*/
+
+.msg {
+  color: #fff;
+}
+
+#tool_bar, #ttsCheck_div {
+  position: fixed;
+  right: 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #000000;
+  min-width: 150px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.6);
+  display: none;
+  border-radius: 3px;
+  padding: 1px 10px 0 10px;
+  vertical-align: middle;
+}
+
+#tool_bar {
+  top: 10px;
+  display: none;
+}
+#tool_bar img {
+  width: 12px;
+  height: 12px;
+}
+#tool_bar svg {
+}
+
+#heat {
+
+}
+
+#ttsCheck_div {
+  top: 50px;
+  vertical-align: middle;
+}
+
+#ttsCheck_div input[type="checkbox"] {
+  position: relative;
+  vertical-align: middle;
+  bottom: 1px;
+}
+
+#setting {
+  display: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+說明文件:
+https://hackmd.io/s/B183d6iwG
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BABANANA Chat</title>
+
+    <meta name="theme-color" content="#41924B">
+    <!--<link rel="shortcut icon" href="https://banana.eotones.net/favicon.ico" />-->
+
+    <link href="./css/style.css" media="all" rel="stylesheet" />
+    <!--<link href="./css/setting_panel.css" media="all" rel="stylesheet" />-->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.jQuery || document.write('<script src="./js/jquery-3.3.1.min.js"><\/script>');
+    </script>
+  </head>
+  <body>
+    <div id="body-wrapper">
+      <div id="announcements">
+        <div class="chat_title">&lt; BABANANA Chat &gt;</div>
+        <noscript>
+          本頁面必須開啟Javascript功能才可使用。<br>
+          說明文件請到: <a href="https://hackmd.io/s/B183d6iwG" rel="noopener noreferrer" target="_blank">https://hackmd.io/s/B183d6iwG</a>
+        </noscript>
+        <div id="c_script" style="display:none;">
+          這個頁面是金剛直播聊天室的"非官方"連線工具，<br>
+          本站和金剛直播(www.kingkong.com.tw)無任何關係。<br>
+          說明文件請到: <a href="https://hackmd.io/s/B183d6iwG" rel="noopener noreferrer" target="_blank">https://hackmd.io/s/B183d6iwG</a><br><br>
+          <div>
+            輸入你的實況台編號: <br>
+            <input id="inputChannel" type="text" placeholder="例如： 2426076" value="" />
+            <button id="btn_submit">送出</button>
+          </div>
+        </div>
+      </div>
+      <div id="output">
+
+      </div>
+
+      <div id="tool_bar"><span id="heat">熱度: 0</span><span id="setting"> | <img src="./images/svg/cog.svg"> 設定</span></div>
+
+      <div id="ttsCheck_div">
+        語音: <input type="checkbox" id="ttsCheck"> (Chrome專用)
+      </div>
+
+      <div id="scroll_to_bottom_btn">往下查看更多訊息。</div>
+    </div>
+
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+    <script type="text/javascript">
+      var obs_mode = false;
+      var chat_limit = 50000;
+    </script>
+    <script type="text/javascript" src="tts.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90554780-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90554780-3', {
+        'page_location': document.location.href,
+        'page_title': document.title
+      });
+    </script>
+  </body>
+</html>
